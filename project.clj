@@ -5,6 +5,6 @@
                  [org.clojure/java.jdbc "0.6.1"]
                  [org.clojure/tools.cli "0.3.5"]
                  [org.postgresql/postgresql "9.4.1210"]]
-  :main ves.core
+  :main ves.main
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
