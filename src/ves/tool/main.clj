@@ -1,7 +1,7 @@
-(ns ves.main
+(ns ves.tool.main
   (:require [clojure.string :as string]
-            [ves.dump :as dump]
-            [ves.schema :as schema])
+            [ves.tool.dump :as dump]
+            [ves.tool.schema :as schema])
   (:gen-class))
 
 (def usage

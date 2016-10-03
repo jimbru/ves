@@ -1,6 +1,6 @@
-(ns ves.schema
+(ns ves.tool.schema
   (:require [clojure.string :as string]
-            [ves.sql :as sql]))
+            [ves.tool.sql :as sql]))
 
 (defn usage [command options-summary]
   (->> [(format "usage: ves %s [<options>] <name>" command)

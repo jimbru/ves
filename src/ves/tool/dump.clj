@@ -1,4 +1,4 @@
-(ns ves.dump
+(ns ves.tool.dump
   (:require [clojure.java.jdbc :as jdbc]
             [clojure.pprint :refer [pprint]]
             [clojure.set :refer [difference]]

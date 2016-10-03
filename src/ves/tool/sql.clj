@@ -1,4 +1,4 @@
-(ns ves.sql
+(ns ves.tool.sql
   (:require [clojure.java.io :as io]))
 
 (defn load-sql [filename]
