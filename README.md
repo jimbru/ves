@@ -1,4 +1,4 @@
-# ves-tool
+# ves
 
 FIXME: description
 
@@ -9,6 +9,8 @@ Download from http://example.com/FIXME.
 ## Usage
 
 FIXME: explanation
+
+    (require '[ves.core :refer :all])
 
     $ java -jar ves-tool-0.1.0-standalone.jar [args]
 
