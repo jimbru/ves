@@ -1,1 +1,1 @@
-{:database-url "jdbc:postgresql://localhost:5432/ves?user=postgres"}
+{:ves-database-url "jdbc:postgresql://localhost:5432/ves?user=postgres"}

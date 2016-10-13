@@ -9,7 +9,9 @@
            org.postgresql.util.PGobject))
 
 (def spec
-  (c3p0/make-datasource-spec {:connection-uri (conf/get :database-url)}))
+  (c3p0/make-datasource-spec
+   {:connection-uri    (or (conf/get :ves-database-url) (conf/get :database-url))
+    :initial-pool-size (or (conf/get :ves-initial-pool-size) 3)}))
 
 (defqueries "sql/ves.sql"
   {:connection spec})
