@@ -1,7 +1,10 @@
+[![Clojars Project](https://img.shields.io/clojars/v/ves.svg)](https://clojars.org/ves)
+[![Build Status](https://travis-ci.org/jimbru/ves.svg?branch=master)](https://travis-ci.org/jimbru/ves)
+
 # ves
 
 Vertex-Edge Store. A library (and supporting command line tool) for storing
-loosely-schemaed graph-oriented data in Postgres. Cribbed from Facebook's
+loosely-schema ed graph-oriented data in Postgres. Cribbed from Facebook's
 [fbobj/assoc framework][1].
 
 [1]: https://research.facebook.com/publications/tao-facebook-s-distributed-data-store-for-the-social-graph/

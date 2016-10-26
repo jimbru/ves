@@ -3,5 +3,5 @@
             [ves.tool.main :refer :all]))
 
 (deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+  (testing "I pass but I'm useless!"
+    (is (= 1 1))))

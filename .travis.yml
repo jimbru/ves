@@ -1,0 +1,16 @@
+language: clojure
+
+jdk:
+  - oraclejdk8
+
+addons:
+  postgresql: "9.4"
+
+env:
+  - TEST_DIR=ves-lib
+  - TEST_DIR=ves-tool
+
+before_install: cd $TEST_DIR
+
+before_script:
+  - psql -U postgres -c 'CREATE DATABASE ves;'
