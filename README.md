@@ -31,8 +31,7 @@ Call the library from your Clojure code to transact with the database:
 (require '[ves.core :refer :all])
 ```
 
-Ves uses the
-[totally excellent conf library](https://github.com/jimbru/conf) to handle
+Ves uses [this conf library](https://github.com/jimbru/conf) to handle
 configuration. You'll need to make sure the `:database-url` key is set so that
 ves knows where to find Postgres.
 
