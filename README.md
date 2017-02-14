@@ -3,9 +3,8 @@
 
 # ves
 
-Vertex-Edge Store. A library (and supporting command line tool) for storing
-loosely-schema ed graph-oriented data in Postgres. Cribbed from Facebook's
-[fbobj/assoc framework][1].
+Vertex-Edge Store. A library for storing loosely-schema ed graph-oriented data
+in Postgres. Cribbed from Facebook's [fbobj/assoc framework][1].
 
 [1]: https://research.facebook.com/publications/tao-facebook-s-distributed-data-store-for-the-social-graph/
 
@@ -14,18 +13,18 @@ loosely-schema ed graph-oriented data in Postgres. Cribbed from Facebook's
 Add to your Clojure project file:
 
 ```clojure
-[ves "0.1.0"]
+[ves "0.2.0"]
+```
+
+Migrate your database by installing the base schema:
+
+```sh
+psql $database < ./scripts/base-schema.sql
 ```
 
 ## Usage
 
-Use the command line tool to generate migrations for schema changes:
-
-``` bash
-java -jar ves-tool-0.1.0-standalone.jar [args]
-```
-
-Call the library from your Clojure code to transact with the database:
+Call the library from your Clojure code:
 
 ``` clojure
 (require '[ves.core :refer :all])
