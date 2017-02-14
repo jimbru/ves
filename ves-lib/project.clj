@@ -1,5 +1,5 @@
-(defproject ves "0.1.0"
-  :description "ves library"
+(defproject ves "0.2.0-SNAPSHOT"
+  :description "Vertex-Edge Store"
   :url "https://github.com/jimbru/ves"
   :license {:name "MIT"
             :url "https://opensource.org/licenses/MIT"}
