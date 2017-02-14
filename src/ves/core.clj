@@ -1,4 +1,5 @@
 (ns ves.core
+  "Functions for interacting with stored data."
   (:require [clj-time.core :as t]
             [clojure.java.jdbc :refer [with-db-transaction]]
             [ves.db :as db]))

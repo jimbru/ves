@@ -49,3 +49,11 @@ WHERE id1 = :id1 AND type = :type AND id2 = :id2 AND deleted_at IS NULL
 -- name: edge-delete!
 UPDATE edges SET deleted_at = :now
 WHERE id1 = :id1 AND type = :type AND id2 = :id2 AND deleted_at IS NULL
+
+-- name: schema-vertex-type-create<!
+INSERT INTO vertex_types (name, created_at, updated_at)
+VALUES (:name, :now, :now)
+
+-- name: schema-edge-type-create<!
+INSERT INTO edge_types (name, created_at, updated_at)
+VALUES (:name, :now, :now)
