@@ -11,4 +11,6 @@
                  [org.clojure/java.jdbc "0.6.1"]
                  [org.postgresql/postgresql "9.4.1211"]
                  [yesql "0.5.3"]]
-  :profiles {:test {:jvm-opts ["-Dconf.env=test"]}})
+  :profiles
+  {:test {:jvm-opts ["-Dconf.env=test"
+                     "-Djava.util.logging.config.file=.logging.properties"]}})
